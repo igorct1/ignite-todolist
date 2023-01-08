@@ -1,0 +1,46 @@
+.tasksContainer {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-top: -28px;
+  gap: 0.8rem;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 1.6rem;
+
+  border-radius: 8px;
+  border: none;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-500);
+  outline: none;
+  color: var(--white);
+}
+
+.inputContainer input:focus {
+  border: 1px solid var(--purple);
+}
+
+.inputContainer button {
+  padding: 1.6rem;
+  border: none;
+  border-radius: 8px;
+
+  background: var(--blue-dark);
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: var(--white);
+  cursor: pointer;
+}
+
+.inputContainer button:hover {
+  background: var(--blue);
+}
