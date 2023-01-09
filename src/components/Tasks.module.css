@@ -19,7 +19,7 @@
   background: var(--gray-500);
   border: 1px solid var(--gray-500);
   outline: none;
-  color: var(--white);
+  color: var(--gray-200);
 }
 
 .inputContainer input:focus {
@@ -37,10 +37,39 @@
   align-items: center;
   gap: 0.8rem;
 
-  color: var(--white);
+  color: var(--gray-100);
   cursor: pointer;
+  font-weight: bold;
 }
 
 .inputContainer button:hover {
   background: var(--blue);
+}
+
+.createdAndCompletedTasksContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6.4rem;
+  font-size: 1.4rem;
+}
+
+.createdAndCompletedTasksContainer span {
+  background: var(--gray-400);
+  border-radius: 999px;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  color: var(--gray-200);
+}
+
+.createdTasks {
+  color: var(--blue);
+}
+
+.completedTasks {
+  color: var(--purple);
+}
+
+.tasksWrapper {
+  margin-top: 2.4rem;
 }
