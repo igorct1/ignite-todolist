@@ -1,6 +1,7 @@
 .tasksContainer {
   max-width: 740px;
   margin: 0 auto;
+  padding: 0rem 2rem;
 }
 
 .inputContainer {
@@ -42,8 +43,13 @@
   font-weight: bold;
 }
 
-.inputContainer button:hover {
+.inputContainer button:not(:disabled):hover {
   background: var(--blue);
+}
+
+.inputContainer button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .createdAndCompletedTasksContainer {
@@ -72,4 +78,7 @@
 
 .tasksWrapper {
   margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
